@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#register">Register here.</a></p>
+    </div>
+
+    <div class="container" id="register">
+        <h1>Register</h1>
+        <form id="register-form">
+            <label for="new-username">Username:</label>
+            <input type="text" id="new-username" name="new-username" required>
+            <label for="new-password">Password:</label>
+            <input type="password" id="new-password" name="new-password" required>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="#login">Login here.</a></p>
+    </div>
+
+    <div class="container hidden" id="home">
+        <h1>Welcome!</h1>
+        <p>You are logged in.</p>
+        <button id="logout">Logout</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
